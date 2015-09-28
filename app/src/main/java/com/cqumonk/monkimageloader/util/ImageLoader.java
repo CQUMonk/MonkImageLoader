@@ -5,8 +5,8 @@ import android.graphics.BitmapFactory;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+import android.support.v4.util.LruCache;
 import android.util.DisplayMetrics;
-import android.util.LruCache;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
@@ -211,6 +211,7 @@ public class ImageLoader {
 
         if (getBitmapFromLRUcache(path)==null){
             if (bm!=null){
+
                 mCache.put(path,bm);
             }
         }

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+    <ImageView
+        android:id="@+id/iv_popitem_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@mipmap/pic_dir"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="17dp"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_popitem_image">
+        <TextView
+            android:id="@+id/tv_popitem_dirname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="全部图片"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_popitem_piccnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/material_blue_grey_800"/>
+
+        </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_popitem_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/dir_choose"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>
